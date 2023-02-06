@@ -30,7 +30,7 @@
                         $this->Adhar_Number = $Adhar_Number;
 
 
-                        echo "User Register With Details:" . "Firts name:\t" . $First_name . ",Surname Name:\t" . $Last_name  . ",Date of Birth:\t" .  $Date_of_Birth . "\tAddress:" . $Address . "\tEducation Qualificatoin :". $Education_Qualificatoin . "Pan Number:\t" . $Pan_Number . "Adhar NUmber :\t" . $Adhar_Number . "<br>";
+                        echo "User Register With Details:" . "Firts name:\t" . $First_name . ",Surname Name:\t" . $Last_name  . ",Date of Birth:\t" .  $Date_of_Birth . "\tAddress:" . $Address . "\tEducation Qualificatoin :". $Education_Qualificatoin . "Pan Number:\t" . $Pan_Number . "Adhar NUmber :\t" . $Adhar_Number . "<br>"; //
                     }       
 
                     
@@ -54,12 +54,12 @@
 
                             if($Amount< 500)
                                {
-                                 echo "Please Enter Amount more than 500:" . "<br>";
+                                 echo "Please Enter Amount more than 500 and tra Again:" . "<br>";
                                } 
                                
                             else
                                {
-                                 echo "WIthrwal Successfull :";
+                                 echo "WIthrwal of RS\t" . $Amount ."\tSuccessfull :" ;
                                }
                             
 
@@ -80,7 +80,7 @@ $Bank_user_vishvas->User_register('Vishvas' ,'Solanki' , '1-1-1900' , '18c nirma
 
 $Bank_user_vishvas->Withdraw_Money(200); ///this will show error message that please enter amount more than 500
 
-$Bank_user_vishvas->Withdraw_Money(500);
+$Bank_user_vishvas->Withdraw_Money(500); // this will show successfull withdrwal
 
 
 ?>
